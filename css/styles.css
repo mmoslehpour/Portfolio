@@ -1,0 +1,230 @@
+/* ===============================
+   
+   Colour Palette:
+   ---------------
+   Light Cream:		#f2f3ee
+   Orange:			#d17f38
+   Yellow:			#e8c04f
+   Brown:			#4b2707
+
+   dark gray1: #232323;
+      dark gray2: #525151;
+   dark gray3: #757474;
+   light gray1: 9E9D9D;
+
+   =============================== */
+
+/* General */
+
+body { 
+	background: #9E9D9D url('../images/bg-tile.gif') top left repeat;
+	color: #525151; /*內文*/
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-size: 14px;
+	font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+	width: 924px;
+	margin: 0 auto;
+	padding: 30px 24px;
+}
+
+/* Typography 內文大標題*/
+
+h1, h2 {
+	font-family: 'Love Ya Like A Sister', cursive;
+	color: #232323;
+	font-size: 40px;
+	font-weight: normal;
+	line-height: 44px;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	background: url('../images/header-divider.png') bottom center no-repeat;
+	padding: 0 0 20px;
+}
+/*內文強調*/
+h1 em {
+	color: #757474;
+	font-style: normal;
+}
+
+h2 {
+	font-size: 34px;
+}
+
+h3 {
+	margin: 0;
+}
+
+p.lead {
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+	margin: 10px 0;
+}
+
+p.body {
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+	margin: 10px 0;
+}
+
+p {
+	margin: 0;
+}
+
+a:link {
+	color: #FF2D00;
+}
+/*大標題 換頁*/
+a:visited {
+	color: #232323;
+}
+
+a:hover {
+	color: #FF2D00;
+}
+
+hr {
+	border: none;
+	height: 33px;
+	width: 333px;
+	margin: 30px auto;
+	background: url('../images/divider.png') center center no-repeat;
+}
+
+/* Header */
+
+header nav {
+	text-align: center;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	line-height: 141px;
+}
+
+header nav ul li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+header nav ul li a:hover {
+	color: #FF2D00;
+	padding-top: 20px;
+	background: url('../images/mouse.png') top center no-repeat;
+}
+
+header nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+header nav ul li#logo a {
+	display: block;
+	width: 292px;
+	height: 141px;
+	background: url('../images/logo.png') center center no-repeat;
+	text-indent: -9999px;
+}
+
+header nav ul li#logo a:hover {
+	padding: 0;
+	background: url('../images/logo-hover.png') center center no-repeat;
+}
+
+/* Hero */
+
+#hero {
+	background: #FF2D00 url('../images/light_grey.gif') top left repeat;
+}
+
+#hero .container {
+	position: relative;
+}
+
+#hero .large-ribbon {
+	height: 222px;
+	width: 150px;
+	background: url('../images/big_mouse.png') top left no-repeat;
+	text-indent: -9999px;
+	position: absolute;
+	top: -23px;
+	right: -30px;
+}
+
+/* The Whole Story */
+
+#about { 
+	position: relative;
+	top: 50%;
+    left: 30%;
+    margin-top: 20px;
+	text-align: center;
+	height: 222px;
+	width: 450px;
+	margin-right: 300px;
+	font-size: 20px;
+}
+
+
+#gloom {
+	background: url('../images/gloom.png') left center no-repeat;
+	height: 222px;
+	width: 350px;
+	float: left;
+}
+
+#foodasyougo {
+	background: url('../images/foodasyougo.png') left center no-repeat;
+	height: 222px;
+	width: 350px;
+	float: left;
+}
+
+
+/* Footer */
+
+footer.main {
+	background: #4b2707 url('../images/bg-tile-brown.gif') top left repeat;
+	color: #f2f3ee;
+	padding: 0px 0;
+}
+
+footer.main a:hover {
+	color: #f2f3ee;
+}
+
+#uncopyright, #credits {
+	width: 240px;
+	float: left;
+	padding: 1px 0 10px 50px;
+}
+
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+
+
+
+
